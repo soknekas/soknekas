@@ -1,0 +1,240 @@
+/* Configurações Gerais - Preto, Branco e Detalhes em Vermelho */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    color: #111111; /* Preto predominante no texto */
+    background-color: #ffffff; /* Fundo branco limpo */
+    scroll-behavior: smooth;
+}
+
+/* Cabeçalho */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 8%;
+    background-color: #111111; /* Fundo Preto */
+    box-shadow: 0 2px 10px rgba(0,0,0,0.3);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.logo h1 {
+    font-size: 24px;
+    color: #ffffff; /* Texto Branco */
+}
+
+.logo h1 span {
+    color: #e60000; /* Destaque em Vermelho Vivo */
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    align-items: center;
+}
+
+nav ul li {
+    margin-left: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #ffffff;
+    font-weight: 600;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: #e60000; /* Hover Vermelho */
+}
+
+.btn-contato {
+    background-color: #e60000; /* Botão Vermelho */
+    color: #ffffff !important;
+    padding: 8px 18px;
+    border-radius: 20px;
+    transition: background 0.3s;
+}
+
+.btn-contato:hover {
+    background-color: #b30000;
+}
+
+/* Banner Principal (Hero) */
+.hero {
+    /* Fundo escurecido destacando o texto */
+    background: linear-gradient(rgba(0,0,0,0.75), rgba(0,0,0,0.75)), url('https://images.unsplash.com/photo-1514432324607-a09d9b4aefdd?q=80&w=1200') no-repeat center center/cover;
+    height: 65vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: #ffffff;
+    padding: 0 20px;
+}
+
+.hero-content h2 {
+    font-size: 42px;
+    margin-bottom: 15px;
+    letter-spacing: 1px;
+}
+
+.hero-content p {
+    font-size: 18px;
+    margin-bottom: 30px;
+    color: #cccccc;
+}
+
+.btn-cta {
+    background-color: #25d366; /* Verde Oficial do WhatsApp para destaque de ação */
+    color: #ffffff;
+    padding: 15px 30px;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bold;
+    border-radius: 30px;
+    box-shadow: 0 4px 15px rgba(37, 211, 102, 0.3);
+    transition: transform 0.3s, background 0.3s;
+    display: inline-block;
+}
+
+.btn-cta:hover {
+    transform: translateY(-3px);
+    background-color: #20ba5a;
+}
+
+/* Produtos */
+.produtos {
+    padding: 60px 8%;
+    text-align: center;
+    background-color: #ffffff;
+}
+
+.produtos h2 {
+    font-size: 32px;
+    color: #111111;
+    position: relative;
+    display: inline-block;
+    padding-bottom: 10px;
+}
+
+.produtos h2::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 60px;
+    height: 3px;
+    background-color: #e60000; /* Linha de detalhe vermelha */
+}
+
+.subtitle {
+    color: #666666;
+    margin-top: 15px;
+    margin-bottom: 40px;
+}
+
+.grid-produtos {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 30px;
+}
+
+.card-produto {
+    background: #fdfdfd;
+    padding: 30px;
+    border-radius: 8px;
+    border: 1px solid #eeeeee;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.03);
+    transition: transform 0.3s, border-color 0.3s;
+}
+
+.card-produto:hover {
+    transform: translateY(-5px);
+    border-color: #e60000; /* Borda acende em vermelho no hover */
+}
+
+.img-placeholder {
+    font-size: 45px;
+    color: #111111; /* Ícones em preto */
+    margin-bottom: 20px;
+}
+
+.card-produto:hover .img-placeholder {
+    color: #e60000; /* Ícone muda para vermelho no hover */
+}
+
+.card-produto h3 {
+    margin-bottom: 10px;
+    color: #111111;
+}
+
+.card-produto p {
+    color: #555555;
+    font-size: 15px;
+    line-height: 1.5;
+}
+
+/* Seção Sobre / YouTube */
+.sobre {
+    background-color: #111111; /* Fundo Preto */
+    color: #ffffff;
+    padding: 70px 8%;
+    text-align: center;
+    border-top: 4px solid #e60000; /* Faixa vermelha divisória */
+}
+
+.sobre-content {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.sobre h2 {
+    font-size: 32px;
+    margin-bottom: 25px;
+}
+
+.sobre p {
+    font-size: 17px;
+    line-height: 1.7;
+    margin-bottom: 35px;
+    color: #dddddd;
+}
+
+.btn-youtube {
+    background-color: #ff0000; /* Vermelho YouTube */
+    color: #ffffff;
+    padding: 14px 28px;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 4px;
+    transition: background 0.3s, transform 0.3s;
+    display: inline-block;
+}
+
+.btn-youtube:hover {
+    background-color: #cc0000;
+    transform: scale(1.03);
+}
+
+/* Rodapé */
+footer {
+    background-color: #0a0a0a;
+    color: #888888;
+    text-align: center;
+    padding: 30px;
+    font-size: 14px;
+    border-top: 1px solid #222222;
+}
+
+footer p {
+    margin: 5px 0;
+}

@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Só K-nekas Personalizados | Muito além de canecas</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Ícones -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+    <!-- Cabeçalho -->
+    <header>
+        <div class="logo">
+            <h1>Só K-nekas <span>Personalizados</span></h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#inicio">Início</a></li>
+                <li><a href="#produtos">Produtos</a></li>
+                <li><a href="#sobre">Sobre Nós</a></li>
+                <li><a href="#contato" class="btn-contato">Fazer Orçamento</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Banner Principal -->
+    <section id="inicio" class="hero">
+        <div class="hero-content">
+            <h2>Presentes Únicos e Brindes Especiais</h2>
+            <p>Especialistas em sublimação. Da clássica caneca a diversos produtos personalizados com a sua ideia!</p>
+            <!-- LEBRE-SE: Troque o 5513999999999 pelo seu número real com DDD -->
+            <a href="https://wa.me/5513999999999" target="_blank" class="btn-cta"><i class="fab fa-whatsapp"></i> Peça pelo WhatsApp</a>
+        </div>
+    </section>
+
+    <!-- Seção de Produtos -->
+    <section id="produtos" class="produtos">
+        <h2>Nossos Produtos</h2>
+        <p class="subtitle">Trabalhamos com o melhor da sublimação para eternizar seus momentos.</p>
+        
+        <div class="grid-produtos">
+            <div class="card-produto">
+                <div class="img-placeholder"><i class="fas fa-mug-hot"></i></div>
+                <h3>Canecas Exclusivas</h3>
+                <p>Porcelana, polímero, mágicas e de chopp. Qualidade premium para o seu dia a dia.</p>
+            </div>
+            <div class="card-produto">
+                <div class="img-placeholder"><i class="fas fa-tshirt"></i></div>
+                <h3>Camisetas & Tecidos</h3>
+                <p>Estampas com cores vivas, toque zero e alta durabilidade para qualquer ocasião.</p>
+            </div>
+            <div class="card-produto">
+                <div class="img-placeholder"><i class="fas fa-gift"></i></div>
+                <h3>Diversos em Sublimação</h3>
+                <p>Almofadas, chaveiros, azulejos e uma variedade de mimos personalizados sob encomenda.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Seção Sobre & YouTube -->
+    <section id="sobre" class="sobre">
+        <div class="sobre-content">
+            <h2>Bastidores da Criação</h2>
+            <p>Na <strong>Só K-nekas Personalizados</strong>, cada peça é feita com dedicação e precisão técnica. Quer ver como a mágica da sublimação acontece, conhecer novos produtos e conferir dicas? Acompanhe nosso trabalho direto no nosso canal!</p>
+            <!-- LEMBRE-SE: Cole o link do seu canal do YouTube no href abaixo -->
+            <a href="https://www.youtube.com/@SeuCanalAqui" target="_blank" class="btn-youtube"><i class="fab fa-youtube"></i> Visite nosso Canal no YouTube</a>
+        </div>
+    </section>
+
+    <!-- Rodapé -->
+    <footer id="contato">
+        <p>&copy; 2026 Só K-nekas Personalizados. Atendendo Praia Grande - SP e região.</p>
+        <p>Desenvolvido com foco em excelência.</p>
+    </footer>
+
+</body>
+</html>
