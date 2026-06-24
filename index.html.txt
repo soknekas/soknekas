@@ -3,76 +3,108 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Só K-nekas Personalizados | Muito além de canecas</title>
+    <title>Só K-nekas Personalizados | Loja Oficial</title>
     <link rel="stylesheet" href="style.css">
-    <!-- Ícones -->
+    <!-- Ícones Font Awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
 
-    <!-- Cabeçalho -->
+    <!-- Cabeçalho com Logo -->
     <header>
-        <div class="logo">
+        <div class="logo-container">
+            <!-- Para incluir sua logo, salve a imagem na mesma pasta com o nome 'logo.png' -->
+            <img src="logo.png" alt="Logo Só K-nekas" class="logo-img" onerror="this.style.display='none'">
             <h1>Só K-nekas <span>Personalizados</span></h1>
         </div>
         <nav>
             <ul>
                 <li><a href="#inicio">Início</a></li>
-                <li><a href="#produtos">Produtos</a></li>
-                <li><a href="#sobre">Sobre Nós</a></li>
-                <li><a href="#contato" class="btn-contato">Fazer Orçamento</a></li>
+                <li><a href="#loja">Loja / Catálogo</a></li>
+                <li><a href="#sobre">Sobre</a></li>
+                <li><a href="https://wa.me/5513996200991" target="_blank" class="btn-contato-topo">Falar Conosco</a></li>
             </ul>
         </nav>
     </header>
 
-    <!-- Banner Principal -->
+    <!-- Banner Principal (Hero) -->
     <section id="inicio" class="hero">
         <div class="hero-content">
-            <h2>Presentes Únicos e Brindes Especiais</h2>
-            <p>Especialistas em sublimação. Da clássica caneca a diversos produtos personalizados com a sua ideia!</p>
-            <!-- LEBRE-SE: Troque o 5513999999999 pelo seu número real com DDD -->
-            <a href="https://wa.me/5513999999999" target="_blank" class="btn-cta"><i class="fab fa-whatsapp"></i> Peça pelo WhatsApp</a>
+            <h2>Sua Ideia Estampada com Excelência</h2>
+            <p>Canecas exclusivas e o melhor do mundo da sublimação direto para você.</p>
+            <a href="#loja" class="btn-hero">Ver Catálogo de Vendas</a>
         </div>
     </section>
 
-    <!-- Seção de Produtos -->
-    <section id="produtos" class="produtos">
-        <h2>Nossos Produtos</h2>
-        <p class="subtitle">Trabalhamos com o melhor da sublimação para eternizar seus momentos.</p>
+    <!-- Vitrine de Vendas / Loja -->
+    <section id="loja" class="loja">
+        <h2>Nosso Catálogo</h2>
+        <p class="subtitle">Escolha o seu produto e finalize o pedido direto no nosso WhatsApp</p>
         
         <div class="grid-produtos">
+            
+            <!-- PRODUTO 1: Caneca de Porcelana -->
             <div class="card-produto">
-                <div class="img-placeholder"><i class="fas fa-mug-hot"></i></div>
-                <h3>Canecas Exclusivas</h3>
-                <p>Porcelana, polímero, mágicas e de chopp. Qualidade premium para o seu dia a dia.</p>
+                <div class="img-produto-placeholder">
+                    <i class="fas fa-mug-hot"></i>
+                    <!-- Quando tiver foto, use: <img src="caneca-porcelana.jpg" alt="Caneca"> -->
+                </div>
+                <div class="produto-info">
+                    <h3>Caneca de Porcelana Personalizada</h3>
+                    <p>Ideal para presentes, datas comemorativas ou uso corporativo. Cerâmica premium com alta definição.</p>
+                    <span class="preco">Consulte Preço</span>
+                    <a href="https://wa.me/5513996200991?text=Olá!%20Gostaria%20de%20encomendar%20uma%20Caneca%20de%20Porcelana%20Personalizada." target="_blank" class="btn-comprar">
+                        <i class="fab fa-whatsapp"></i> Comprar via WhatsApp
+                    </a>
+                </div>
             </div>
+
+            <!-- PRODUTO 2: Caneca Mágica -->
             <div class="card-produto">
-                <div class="img-placeholder"><i class="fas fa-tshirt"></i></div>
-                <h3>Camisetas & Tecidos</h3>
-                <p>Estampas com cores vivas, toque zero e alta durabilidade para qualquer ocasião.</p>
+                <div class="img-produto-placeholder">
+                    <i class="fas fa-wand-magic-sparkles"></i>
+                </div>
+                <div class="produto-info">
+                    <h3>Caneca Mágica Preta</h3>
+                    <p>A estampa aparece magicamente ao adicionar qualquer líquido quente. Perfeita para surpreender.</p>
+                    <span class="preco">Consulte Preço</span>
+                    <a href="https://wa.me/5513996200991?text=Olá!%20Gostaria%20de%20encomendar%20a%20Caneca%20Mágica%20Preta!" target="_blank" class="btn-comprar">
+                        <i class="fab fa-whatsapp"></i> Comprar via WhatsApp
+                    </a>
+                </div>
             </div>
+
+            <!-- PRODUTO 3: Outros Produtos de Sublimação -->
             <div class="card-produto">
-                <div class="img-placeholder"><i class="fas fa-gift"></i></div>
-                <h3>Diversos em Sublimação</h3>
-                <p>Almofadas, chaveiros, azulejos e uma variedade de mimos personalizados sob encomenda.</p>
+                <div class="img-produto-placeholder">
+                    <i class="fas fa-gift"></i>
+                </div>
+                <div class="produto-info">
+                    <h3>Produtos Personalizados Variados</h3>
+                    <p>Camisetas, almofadas, azulejos, chaveiros e diversos outros materiais personalizados sob encomenda.</p>
+                    <span class="preco">Consulte Opções</span>
+                    <a href="https://wa.me/5513996200991?text=Olá!%20Gostaria%20de%20conhecer%20as%20opções%20de%20produtos%20personalizados%20de%20sublimação." target="_blank" class="btn-comprar">
+                        <i class="fab fa-whatsapp"></i> Ver Opções no WhatsApp
+                    </a>
+                </div>
             </div>
+
         </div>
     </section>
 
-    <!-- Seção Sobre & YouTube -->
+    <!-- Seção Sobre & Redes -->
     <section id="sobre" class="sobre">
         <div class="sobre-content">
-            <h2>Bastidores da Criação</h2>
-            <p>Na <strong>Só K-nekas Personalizados</strong>, cada peça é feita com dedicação e precisão técnica. Quer ver como a mágica da sublimação acontece, conhecer novos produtos e conferir dicas? Acompanhe nosso trabalho direto no nosso canal!</p>
-            <!-- LEMBRE-SE: Cole o link do seu canal do YouTube no href abaixo -->
-            <a href="https://www.youtube.com/@SeuCanalAqui" target="_blank" class="btn-youtube"><i class="fab fa-youtube"></i> Visite nosso Canal no YouTube</a>
+            <h2>Acompanhe Nossos Bastidores</h2>
+            <p>Na <strong>Só K-nekas Personalizados</strong>, nós vamos muito além de canecas! Quer saber como produzimos cada detalhe? Veja dicas, novidades e o passo a passo da sublimação no nosso canal do YouTube.</p>
+            <a href="https://www.youtube.com/@SoKnekasPersonalizados" target="_blank" class="btn-youtube"><i class="fab fa-youtube"></i> Ir para o YouTube</a>
         </div>
     </section>
 
     <!-- Rodapé -->
-    <footer id="contato">
-        <p>&copy; 2026 Só K-nekas Personalizados. Atendendo Praia Grande - SP e região.</p>
-        <p>Desenvolvido com foco em excelência.</p>
+    <footer>
+        <p>&copy; 2026 Só K-nekas Personalizados. Atendendo Praia Grande, São Vicente e Região - SP.</p>
+        <p>WhatsApp Comercial: (13) 99620-0991</p>
     </footer>
 
 </body>
